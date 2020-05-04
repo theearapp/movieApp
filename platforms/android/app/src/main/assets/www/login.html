@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>J's Movie App</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       <link href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div>
+            <h1>J's Movie App</h1>
+            <form>
+                <input type="text" placeholder="Username..." class="home_input_username">
+                <input type="password" placeholder="Password..." class="home_input_password">
+                <input type="submit" value="Login" class="login_submit" onclick="loginReq(); return false;">
+                <input type="submit" value="Signup" class="signup_submit" onclick="redirectToSignup(); return false;">
+            </form>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </body>
+</html>

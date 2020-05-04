@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>J's Movie App</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       <link href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div>
+            <h1>J's Movie App</h1>
+            <form>
+                <input type="text" placeholder="Search" class="search_input" id="searchInput">
+                <input type="submit" value="Search" class="search_buttons" id="searchReg_button" onclick="searchReq('searchReg'); return false;">
+                <input type="submit" value="Title" class="search_buttons" id="title_button" onclick="searchReq('title'); return false;">
+                <input type="submit" value="IMDb" class="search_buttons" id="iMDb_button" onclick="searchReq('IMDb'); return false;">
+                <input type="submit" value="FAVORITES" class="footer_buttons" id="fav_button">
+                <input type="submit" value="LOGOUT" class="footer_buttons" id="logout_button">
+            </form>
+            <table id="movieTable">
+                <tr>
+                  <th>Movie</th>
+                  <th>Year</th>
+                  <th>IMDb</th>
+                </tr>
+            </table>
+            <h2 id="noMovies">No movie(s)! Please search</h2>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </body>
+</html>
